@@ -18,8 +18,8 @@ function showTime () {
     if (min < 10) {
       min = "0" + min;
     };
-  clockDisplay[0].innerHTML = hr + ":" + min + ":" + sec;
-
+  clockDisplay[0].innerHTML = "#" + hr + min + sec;
+  backgroundDisplay[0].style.background = "#" + hr + min + sec;
 };
 
 var changeTime = setInterval(showTime, 1000);
